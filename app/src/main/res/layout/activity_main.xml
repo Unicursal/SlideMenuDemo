@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.printdeng.day1126.widget.SlideMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.printdeng.day1126.ui.main.activity.MainActivity"
+    >
+
+
+<include layout="@layout/layout_left_menu"></include>
+
+<include layout="@layout/layout_main_content"></include>
+
+
+
+</com.printdeng.day1126.widget.SlideMenu>

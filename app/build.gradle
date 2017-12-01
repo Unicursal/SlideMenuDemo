@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.printdeng.day1126"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+
+    /*查找控件*/
+    compile 'com.jakewharton:butterknife:7.0.1'
+/*网络请求okhttp*/
+    compile 'com.squareup.okio:okio:1.8.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+/*gson*/
+    compile 'com.google.code.gson:gson:2.2.4'
+/*图片框架*/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    /*低版本动画兼容包*/
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+
+/*高斯模糊效果*/
+    compile 'net.qiujuer.genius:blur:2.0.0'
+    compile 'net.qiujuer.genius:res:2.0.0-beta6'
+    compile 'net.qiujuer.genius:ui:2.0.0-beta6'
+
+
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+
+//底部弹窗窗体自定义控件所在的jar包
+    compile 'com.flipboard:bottomsheet-core:1.5.1'
+
+    //ormlite操作数据库
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+
+    //retrofit访问网络
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //json解析
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    //design包
+    compile 'com.android.support:design:26+'
+
+//改变状态栏的颜色
+    compile 'com.githang:status-bar-compat:latest.integration'
+
+}
